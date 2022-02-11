@@ -4,11 +4,11 @@ import registration_img from "../assets/registration_img.png";
 import Navbar from './nav';
 
 
-const register = () => {
+function register() {
   return <>
-  <Navbar /><div className="registration">
-        <img src={registration_img} alt="registration"  className="registrationImage" />
-      
+    <Navbar /><div className="registration">
+      <img src={registration_img} alt="registration" className="registrationImage" />
+
       <div className="registrationForm">
         <div>
           <h1 className='header'>Register</h1>
@@ -28,7 +28,7 @@ const register = () => {
         <div className="regFormInput">
           <input type="email" placeholder="Confirm password" required="" className="regUFormInput" />
         </div>
-   
+
         <ul className="regSignin">
           <li><button className="btn">Sign In</button></li>
           <li><h4 className="or">or</h4></li>
@@ -36,9 +36,9 @@ const register = () => {
         </ul>
       </div>
     </div>
-    
-    </>;
-  
-};
+
+  </>;
+
+}
 
 export default register;
